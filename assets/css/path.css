@@ -1,0 +1,47 @@
+/* SHADOWPROOF — learning path */
+.learning-path {
+  display: grid;
+  grid-template-columns: 1fr 34px 1fr 34px 1fr 34px 1fr;
+  align-items: stretch;
+  gap: 4px;
+}
+.path-tier {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  transition: transform .2s var(--ease), border-color .15s, box-shadow .2s;
+  overflow: hidden;
+}
+.path-tier::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(90% 100% at 100% 0%, color-mix(in srgb, var(--pt) 12%, transparent), transparent 65%);
+  opacity: .8;
+  pointer-events: none;
+}
+.path-tier:hover { transform: translateY(-3px); border-color: var(--border-strong); box-shadow: var(--shadow-sm); }
+.path-tier > * { position: relative; }
+.path-tier .pt-top { display: flex; align-items: center; justify-content: space-between; }
+.path-tier .pt-num { font-family: var(--font-mono); font-size: 9px; letter-spacing: .14em; color: var(--pt); }
+.path-tier .pt-count { font-family: var(--font-mono); font-size: 9px; color: var(--text-4); }
+.path-tier h3 { font-size: 1rem; }
+.path-tier p { font-size: 11.5px; color: var(--text-3); line-height: 1.55; flex: 1; }
+.path-tier .pt-mods { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: .05em; color: var(--pt); }
+[data-theme="light"] .path-tier .pt-num,
+[data-theme="light"] .path-tier .pt-mods { color: color-mix(in srgb, var(--pt) 38%, #07130f 62%); }
+.path-arrow {
+  display: grid;
+  place-items: center;
+  color: var(--text-4);
+}
+.path-arrow svg { width: 16px; height: 16px; }
+@media (max-width: 900px) {
+  .learning-path { grid-template-columns: 1fr; gap: 8px; }
+  .path-arrow { transform: rotate(90deg); padding: 2px 0; }
+}

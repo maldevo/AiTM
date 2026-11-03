@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2027 Roadmap · SHADOWPROOF</title>
+  <meta name="description" content="The SHADOWPROOF 2027 production roadmap: from a local-first prototype to a measured, accessible security awareness program.">
+  <meta name="theme-color" content="#080b0c">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/landing.css">
+  <link rel="stylesheet" href="assets/css/roadmap.css">
+  <script src="assets/js/theme.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="siteHeader"></div>
+
+  <main id="main">
+    <section class="rm-hero">
+      <div class="container">
+        <div class="eyebrow">Addendum · 2027 production roadmap</div>
+        <h1>From prototype to <em>production.</em></h1>
+        <p class="lede">A quarter-by-quarter plan for turning the SHADOWPROOF prototype into a measured, accessible security awareness program for the Cybersecurity Department at GNA University.</p>
+        <div class="rm-meta">
+          <span class="pill pill-accent">Target GA · Q4 2027</span>
+          <span class="pill">Prototype status · 16 / 16 modules</span>
+          <span class="pill">Local-first · no backend</span>
+          <span class="pill">Proposal · not a commitment</span>
+        </div>
+        <div class="rm-note">
+          <span class="inline-icon" data-icon="info"></span>
+          <span>This roadmap assumes sponsorship is confirmed and a formal project kickoff happens in Q1 2027. Each phase gate requires sign-off from the department, security leadership, and the learning team before the next phase begins. Timelines are intentionally conservative for a small team.</span>
+        </div>
+
+        <div class="rm-glance">
+          <div class="rg" style="--tint:rgba(87,230,161,.12)"><div class="q">Q1 2027</div><div class="t">Foundation</div><div class="s">Requirements, architecture, governance, accessibility audit</div><div class="state"><span class="pill pill-accent">Prepared</span></div></div>
+          <div class="rg" style="--tint:rgba(127,184,255,.12)"><div class="q">Q2 2027</div><div class="t">Build</div><div class="s">Hosting, SSO, backend, assessment engine, first four modules</div><div class="state"><span class="pill pill-info">Planned</span></div></div>
+          <div class="rg" style="--tint:rgba(183,155,255,.12)"><div class="q">Q3 2027</div><div class="t">Pilot</div><div class="s">All modules live, pilot cohort, reporting, feedback loop</div><div class="state"><span class="pill pill-violet">Planned</span></div></div>
+          <div class="rg" style="--tint:rgba(255,196,107,.12)"><div class="q">Q4 2027</div><div class="t">General availability</div><div class="s">Department rollout, compliance integration, steady state</div><div class="state"><span class="pill pill-warn">Planned</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="container">
+        <div class="timeline">
+          <div class="tl-item current">
+            <div class="tl-marker">Q1</div>
+            <article class="tl-card">
+              <div class="tc-head"><div><h3>Foundation &amp; approvals</h3><div class="tc-sub">Prove the concept can become a controlled program.</div></div><span class="pill pill-accent">Current focus</span></div>
+              <div class="tc-grid">
+                <div><h5>Workstream</h5><ul class="tl-list">
+                  <li><span class="inline-icon" data-icon="check"></span> Formal requirements gathering with the department and learning team</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Security architecture review and threat model for the hosted version</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Data governance and retention policy sign-off</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Development and production environment provisioning</li>
+                  <li><span class="inline-icon" data-icon="check"></span> WCAG 2.1 AA accessibility audit of the prototype</li>
+                </ul></div>
+                <div><h5>Exit criteria</h5><ul class="tl-list criteria">
+                  <li><span class="inline-icon" data-icon="check"></span> Signed project charter</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Approved architecture diagram</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Documented data policy</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Agreement on success metrics</li>
+                </ul></div>
+              </div>
+            </article>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-marker">Q2</div>
+            <article class="tl-card">
+              <div class="tc-head"><div><h3>Platform build</h3><div class="tc-sub">Keep the content and interaction; add identity and persistence.</div></div><span class="pill pill-info">Planned</span></div>
+              <div class="tc-grid">
+                <div><h5>Workstream</h5><ul class="tl-list">
+                  <li><span class="inline-icon" data-icon="check"></span> Hosted deployment with development and production environments</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Institutional SSO integration (OIDC / SAML)</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Backend API and database for progress, assessments, and badges</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Server-side assessment grading and attempt history</li>
+                  <li><span class="inline-icon" data-icon="check"></span> First four modules re-hosted with SSO and tracking</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Admin reporting stub and CSV export</li>
+                </ul></div>
+                <div><h5>Exit criteria</h5><ul class="tl-list criteria">
+                  <li><span class="inline-icon" data-icon="check"></span> End-to-end SSO flow working</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Assessment and badge issuance functional</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Platform penetration test passed</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Internal alpha with the security team</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Accessibility revalidated</li>
+                </ul></div>
+              </div>
+            </article>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-marker">Q3</div>
+            <article class="tl-card">
+              <div class="tc-head"><div><h3>Pilot &amp; measure</h3><div class="tc-sub">One cohort, real behavior data, honest feedback.</div></div><span class="pill pill-violet">Planned</span></div>
+              <div class="tc-grid">
+                <div><h5>Workstream</h5><ul class="tl-list">
+                  <li><span class="inline-icon" data-icon="check"></span> Remaining twelve modules migrated and refreshed</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Reporting dashboard for the department and security office</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Pilot cohort: security students and one partner class</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Pre/post phishing simulation or scenario survey</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Feedback collection and content iteration</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Content maintenance documentation</li>
+                </ul></div>
+                <div><h5>Exit criteria</h5><ul class="tl-list criteria">
+                  <li><span class="inline-icon" data-icon="check"></span> Pilot completion rate ≥ 80%</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Measurable delta in scenario performance</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Net promoter score from the cohort</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Content governance model in place</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Go / no-go decision on rollout</li>
+                </ul></div>
+              </div>
+            </article>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-marker">Q4</div>
+            <article class="tl-card">
+              <div class="tc-head"><div><h3>General availability</h3><div class="tc-sub">Make it part of the institution, not a side project.</div></div><span class="pill pill-warn">Planned</span></div>
+              <div class="tc-grid">
+                <div><h5>Workstream</h5><ul class="tl-list">
+                  <li><span class="inline-icon" data-icon="check"></span> Phased rollout coordinated with the department</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Integration with the annual training calendar</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Manager / faculty reporting for cohort completion</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Content refresh cadence established</li>
+                  <li><span class="inline-icon" data-icon="check"></span> 2028 module roadmap defined</li>
+                </ul></div>
+                <div><h5>Exit criteria</h5><ul class="tl-list criteria">
+                  <li><span class="inline-icon" data-icon="check"></span> All in-scope students enrolled</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Reporting integrated with the training workflow</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Steady-state operations documented</li>
+                  <li><span class="inline-icon" data-icon="check"></span> Year-one review scheduled</li>
+                </ul></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rm-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">What good looks like</div>
+          <h2>Measure behavior, <span class="serif">not attendance.</span></h2>
+          <p class="lede">Completion is a floor, not a finish line. The production program should be judged by retention, recognition, and reporting behavior.</p>
+        </div>
+        <div class="metrics-grid">
+          <div class="metric"><span class="m-icon"><span class="inline-icon" data-icon="chart"></span></span><h4>Engagement</h4><p>Module completion rate; time in module versus skip rate; return visits.</p></div>
+          <div class="metric"><span class="m-icon"><span class="inline-icon" data-icon="target"></span></span><h4>Retention</h4><p>Knowledge check pass rate and a 90-day recheck score on core modules.</p></div>
+          <div class="metric"><span class="m-icon"><span class="inline-icon" data-icon="trendingUp"></span></span><h4>Behavior</h4><p>Phishing simulation click-rate delta before and after training.</p></div>
+          <div class="metric"><span class="m-icon"><span class="inline-icon" data-icon="siren"></span></span><h4>Reporting</h4><p>Suspicious-message report rate from the trained cohort; time to report.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rm-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Cross-team dependencies</div>
+          <h2>Who needs to be <span class="serif">in the room.</span></h2>
+        </div>
+        <div class="deps">
+          <div class="dep"><div class="d-name">Department leadership</div><div class="d-role">Sponsorship, phase-gate reviews, metric approval.</div></div>
+          <div class="dep"><div class="d-name">Security &amp; IT</div><div class="d-role">Architecture review, penetration test, content accuracy, hosting.</div></div>
+          <div class="dep"><div class="d-name">Learning &amp; faculty</div><div class="d-role">Curriculum fit, cohort integration, student communications.</div></div>
+          <div class="dep"><div class="d-name">Legal &amp; governance</div><div class="d-role">Data policy, retention, PII handling, consent.</div></div>
+          <div class="dep"><div class="d-name">Communications</div><div class="d-role">Launch messaging, onboarding materials, feedback loops.</div></div>
+        </div>
+
+        <div class="rm-cta">
+          <div><h3>See the prototype for yourself.</h3><p>The roadmap describes what comes next. The local workspace is what exists today.</p></div>
+          <div class="row"><a class="btn btn-ghost" href="legacy/roadmap-2027.html">Original 2027 proposal</a><a class="btn btn-primary" href="signin.html?mode=register">Open the prototype <span class="arrow">→</span></a></div>
+        </div>
+
+        <p style="font-size:10.5px;color:var(--text-4);max-width:70ch;margin-top:28px">Scope note: this roadmap covers the platform and content. It does not include ongoing hosting costs, staff time for steady-state content ownership, or the decision on whether SHADOWPROOF supplements or replaces an existing awareness vendor. Those require separate conversations with the institution.</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooter"></div>
+
+  <script src="data/tier1.js"></script>
+  <script src="data/tier2.js"></script>
+  <script src="data/tier3.js"></script>
+  <script src="data/tier4.js"></script>
+  <script src="data/curriculum.js"></script>
+  <script src="assets/js/icons.js"></script>
+  <script src="assets/js/store.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      window.SP.ui.mountHeader({ active: 'roadmap' });
+      window.SP.ui.mountFooter();
+      window.SP.ui.bindThemeToggles();
+      window.SP.ui.initReveal();
+    });
+  </script>
+</body>
+</html>
